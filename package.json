@@ -1,0 +1,23 @@
+{
+  "name": "uikafka",
+  "version": "1.0.0",
+  "description": "Apache Kafka Desktop Client",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mensurmuhammet/uikafka.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mensurmuhammet/uikafka/issues"
+  },
+  "homepage": "https://github.com/mensurmuhammet/uikafka#readme",
+  "dependencies": {
+    "custom-electron-titlebar": "^3.2.3",
+    "electron.js": "0.0.1"
+  }
+}

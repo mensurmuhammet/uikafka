@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- STYLES CSS -->
+        <link rel="stylesheet" href="assets/css/homepage.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- BOX ICONS CSS-->
+	    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <title>Kafka Ui</title>
+    </head>
+    <body>
+        <div class="py-5 text-center align-items-center d-flex homepage" >
+            <div class="container py-5">
+              <div class="row" >
+                <div class="col-md-8 mx-auto"> <img src="assets/img/logo.png">
+                  <h1 class="display-3 mb-4">UI Kafka</h1>
+                  <p class="lead mb-5">Heaven and earth seem to dwell in my soul and absorb its power, like the form of a beloved mistress, then I often think with longing, Oh, would I could describe these conceptions, could impress upon paper all that is living.</p> <a class="btn btn-lg mx-1 btn-outline-dark" href="index.html">Let's Start</a> <a href="#" class="btn btn-lg btn-primary mx-1">Premium</a>
+                </div>
+              </div>
+            </div>
+          </div> 
+          
+        
+    </body>
+    
+    <!--Title Bar JS-->
+     <!-- Renderer process logic -->
+     <script>
+        // 1. Require the installed module
+   const customTitlebar = require('custom-electron-titlebar');
+
+// 2. Create the custom titlebar with your own settings
+//    To make it work, we just need to provide the backgroundColor property
+//    Other properties are optional.
+let MyTitleBar = new customTitlebar.Titlebar({
+    backgroundColor: customTitlebar.Color.fromHex('#E3E3E3'),
+    shadow: true,
+    icon: './icon.svg'
+});
+
+// 3. Update Titlebar text
+MyTitleBar.updateTitle('UI Kafka');
+    </script>
+
+</html>

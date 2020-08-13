@@ -12,7 +12,7 @@ function createWindow () {
   })
 
   // ve uygulamanın index.html dosyasını yükle.
-  win.loadFile('index.html')
+  win.loadFile('homepage.html')
 }
 
 app.whenReady().then(createWindow)

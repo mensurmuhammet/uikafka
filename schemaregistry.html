@@ -2,20 +2,16 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" >
         <!-- STYLES CSS -->
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
-        <!-- BOX ICONS CSS-->
-        
-	    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
         <title>Sidebar menu</title>
     </head>
     <body>
 
-        <div class="wrapper hover_collapse">
-         
+        <div class="wrapper hover_collapse"> 
             <div class="top_navbar">
                 <div class="logo"> UI Kafka  </span></div>
                 <div class="menu">
@@ -43,64 +39,71 @@
         
             <div class="sidebar">
                 <div class="sidebar_inner">
-                <ul>
-                    <li>
-                        <a href="index.html">
-                            <span class="icon"><i class="fas fa-home"></i></span>
-                            <span class="text">Overview</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/brokers.html">
-                            <span class="icon"><i class="fas fa-cogs"></i></span>
-                            <span class="text">Brokers</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/topic.html">
-                            <span class="icon"><i class="fas fa-list-alt"></i></span>
-                            <span class="text">Topic</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/consumer.html">
-                            <span class="icon"><i class="fas fa-sliders-h"></i></span>
-                            <span class="text">Consumer</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/schemaregistry.html">
-                            <span class="icon"><i class="far fa-file"></i></span>
-                            <span class="text">Schema Registry</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/kafkaconnect.html">
-                            <span class="icon"><i class="fab fa-connectdevelop"></i></span>
-                            <span class="text">Kafka Connect</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/kafkastreams.html">
-                            <span class="icon"><i class="fas fa-sync-alt"></i></span>
-                            <span class="text">Kafka Streams</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="example/security.html">
-                            <span class="icon"><i class="fas fa-lock"></i></span>
-                            <span class="text">Security</span>
-                        </a>
-                    </li>
-                </ul>
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span class="icon"><i class="fas fa-home"></i></span>
+                                <span class="text">Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="brokers.html">
+                                <span class="icon"><i class="fas fa-cogs"></i></span>
+                                <span class="text">Brokers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topic.html">
+                                <span class="icon"><i class="fas fa-list-alt"></i></span>
+                                <span class="text">Topic</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consumer.html">
+                                <span class="icon"><i class="fas fa-sliders-h"></i></span>
+                                <span class="text">Consumer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="schemaregistry.html">
+                                <span class="icon"><i class="far fa-file"></i></span>
+                                <span class="text">Schema Registry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kafkaconnect.html">
+                                <span class="icon"><i class="fab fa-connectdevelop"></i></span>
+                                <span class="text">Kafka Connect</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kafkastreams.html">
+                                <span class="icon"><i class="fas fa-sync-alt"></i></span>
+                                <span class="text">Kafka Streams</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="security.html">
+                                <span class="icon"><i class="fas fa-lock"></i></span>
+                                <span class="text">Security</span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        
             <div class="main_container">
-                <div class="container">
-                </div>
+                <div class="container" style="background-color: red;">
+                    <h1>Schema Registry</h1>
+                </div>   
             </div>
+        </div>
+        </div>
     </body>
-    <script>
+    
+    <!--Title Bar JS-->
+     <!-- Renderer process logic -->
+     <script>
         // 1. Require the installed module
    const customTitlebar = require('custom-electron-titlebar');
 

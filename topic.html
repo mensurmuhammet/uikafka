@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" >
+        <!-- STYLES CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+        <title>Sidebar menu</title>
+    </head>
+    <body>
+
+        <div class="wrapper hover_collapse"> 
+            <div class="top_navbar">
+                <div class="logo"> UI Kafka  </span></div>
+                <div class="menu">
+                    <div class="hamburger">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                    <div class="menu_wrap">
+                        <div class="menu-top ">
+                                   <a  href="#" type="button" class="btn btn-sm  btn-outline-primary">Consumer</a>
+                                   <a  href="#" type="button" class="btn btn-sm  btn-outline-primary">Producer</a>
+                               
+                                
+                                <a class="btn  btn-outline-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-sync"></i>                                </a>
+                            
+                                <a  href="#" type="button" class="btn btn-sm btn-outline-primary">Read Only OFF</a>
+                                <a href="https://www.google.com" class="btn  btn-outline-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Options
+                                  </a>
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="sidebar">
+                <div class="sidebar_inner">
+                    <ul>
+                        <li>
+                            <a href="index.html">
+                                <span class="icon"><i class="fas fa-home"></i></span>
+                                <span class="text">Overview</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="brokers.html">
+                                <span class="icon"><i class="fas fa-cogs"></i></span>
+                                <span class="text">Brokers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="topic.html">
+                                <span class="icon"><i class="fas fa-list-alt"></i></span>
+                                <span class="text">Topic</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="consumer.html">
+                                <span class="icon"><i class="fas fa-sliders-h"></i></span>
+                                <span class="text">Consumer</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="schemaregistry.html">
+                                <span class="icon"><i class="far fa-file"></i></span>
+                                <span class="text">Schema Registry</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kafkaconnect.html">
+                                <span class="icon"><i class="fab fa-connectdevelop"></i></span>
+                                <span class="text">Kafka Connect</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="kafkastreams.html">
+                                <span class="icon"><i class="fas fa-sync-alt"></i></span>
+                                <span class="text">Kafka Streams</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="security.html">
+                                <span class="icon"><i class="fas fa-lock"></i></span>
+                                <span class="text">Security</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        
+            <div class="main_container">
+                <div class="container" style="background-color: green;">
+                     <h1>Topic</h1>
+            </div>
+        </div>
+        </div>
+    </body>
+    
+    <!--Title Bar JS-->
+     <!-- Renderer process logic -->
+     <script>
+        // 1. Require the installed module
+   const customTitlebar = require('custom-electron-titlebar');
+
+// 2. Create the custom titlebar with your own settings
+//    To make it work, we just need to provide the backgroundColor property
+//    Other properties are optional.
+let MyTitleBar = new customTitlebar.Titlebar({
+    backgroundColor: customTitlebar.Color.fromHex('#E3E3E3'),
+    shadow: true,
+    icon: './icon.svg'
+});
+
+// 3. Update Titlebar text
+MyTitleBar.updateTitle('UI Kafka');
+    </script>
+   <script src="assets/js/menu.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</html>
